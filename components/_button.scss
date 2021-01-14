@@ -1,0 +1,81 @@
+$btn-radius: 4px;
+.z-btn {
+    display: inline-block;
+    border-radius: $btn-radius;
+    -webkit-border-radius: $btn-radius;
+    -moz-border-radius: $btn-radius;
+    -ms-border-radius: $btn-radius;
+    -o-border-radius: $btn-radius;
+    padding: 10px 20px;
+    outline: 0;
+    border: none;
+    color: $black;
+    background: rgba(241, 241, 241, 0.88);
+    &:hover {
+        background: rgba(230, 230, 230, 0.88);
+    }
+    &:active,
+    &:focus:active {
+        background: rgba(211, 211, 211, 0.88);
+        border: none;
+        padding: 10px 20px;
+    }
+    &:focus,
+    &:focus-within {
+        padding: 8px 18px;
+        border: 2px solid #1111117a;
+        background: rgba(241, 241, 241, 0.88);
+    }
+    // Primary color
+    &.primary {
+        background: $primary;
+        color: $white;
+    }
+    &.primary:hover {
+        background: $primary-hover;
+    }
+    &.primary:active,
+    &.primary:focus:active {
+        background: $primary-active;
+        border: none;
+        padding: 10px 20px;
+    }
+    &.primary:focus,
+    &.primary:focus-within {
+        padding: 8px 18px;
+        border: 2px solid #1111117a;
+        background: $primary;
+    }
+    // Red color
+    &.danger {
+        background: $danger;
+        color: $white;
+    }
+    &.danger:hover {
+        background: $danger-hover;
+    }
+    &.danger:active,
+    &.danger:focus:active {
+        background: $danger-active;
+        border: none;
+        padding: 10px 20px;
+    }
+    &.danger:focus,
+    &.danger:focus-within {
+        padding: 8px 18px;
+        border: 2px solid #1111117a;
+        background: $danger;
+    }
+    // Other third-main
+    &.not-hover:not(:hover) {
+        border: none;
+        padding: 10px 20px;
+    }
+    &:disabled,
+    &.disabled {
+        background: $disabled !important;
+        border: none;
+        pointer-events: none;
+        color: $white;
+    }
+}

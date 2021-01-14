@@ -1,3 +1,9 @@
+@import "./typography/fonts/_lato.scss";
+@import "./colors/_zero-palette.scss";
+@import "./typography/_cursor.scss";
+@import "./typography/_typography.scss";
+@import "./components/_button.scss";
+
 .hello {
     display: flex;
     justify-content: center;
@@ -7,12 +13,4 @@
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-}
-
-.why {
-    content: "do?"
-}
-
-.heee{
-    display: inline;
 }
